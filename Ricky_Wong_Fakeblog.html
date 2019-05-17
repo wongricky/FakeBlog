@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ocean blog">
+    <title>Ocean Blog</title>
+</head>
+
+<body align="center" style="background-image: linear-gradient( #73BFE1, #ffffff)">
+<table>
+    <thead>  
+    </thead>
+    <tbody>
+        <td width="400"></td>
+        <!-- Body context-->
+        <td width="600">
+         <!-- Opening visual -->
+    <img src="IMG/Vaquita_0.jpeg" alt="vaquita"> 
+
+
+    <!-- Title -->
+    <h1><b>The Vaquita</b></h1>
+
+    <!-- Body text (lorem ipsum) --> 
+    <p align="center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Mauris fringilla velit quis tellus fermentum, at tincidunt odio vulputate. 
+        Aenean volutpat vehicula commodo. Aliquam volutpat, massa at pulvinar feugiat, 
+        arcu lorem suscipit sem, ac ullamcorper nisi nunc nec sapien. Fusce accumsan 
+        nisi ac ligula bibendum gravida. Suspendisse egestas congue accumsan. Ut 
+        ornare interdum massa, eget maximus lacus. Morbi at enim id diam malesuada 
+        laoreet. Suspendisse feugiat turpis non est gravida vehicula.
+    </p>
+
+
+    <!-- Table -->
+    <table align="center" style="width:25%" style="align-content: left" border="1" bordercolor="#73BFE1">
+        <thead>
+        <caption>Decline in vaquita population from 1997 to 2016</caption>
+            <th>Year</th>
+            <th colspan="2">Numbers Remaining</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1997</td>
+                <td>567</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>245</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <hr size="5">    
+
+    <!-- Unordered list -->
+    <ul>
+        <p><u>Five major threats to ocean life</u></p>
+        <li>Acidification</li>
+        <li>Warming</li>
+        <li>Habitat Destruction</li>
+        <li>Pollution</li>
+        <li>Overfishing</li>
+    </ul>
+    <br><br>
+    <hr size="5">
+
+    <!-- Form: favorite animal -->
+    <form action="process.php" method="post">
+        <p>Which sea animals do you like?</p>
+        <table align="center">
+        <col width="30">
+        <col width="100">
+        <col width="30">
+        <col width="100">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="shark" name="animal" value="shark">
+                    </td>
+                    <td>
+                        <label for="shark"><img src="IMG/shark.png" alt="shark" width="50" height="50"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="clownfish" name="animal" value="clownfish">
+                    </td>
+                    <td>
+                        <label for="clownfish"><img src="IMG/fish-3.png" alt="clownfish" width="50" height="50"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="flyingfish" name="animal" value="flyingfish">
+                    </td>
+                    <td>
+                        <label for="flyingfish"><img src="IMG/flying-fish.png" alt="flyingfish" width="50" height="50"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="redfish" name="animal" value="redfish">
+                    </td>
+                    <td>
+                        <label for="redfish"><img src="IMG/fish-5.png" alt="redfish" width="50" height="50"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="flounder" name="animal" value="flounder">
+                    </td> 
+                    <td>
+                        <label for="flounder"><img src="IMG/flounder.png" alt="flounder" width="50" height="50"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="angelfish" name="animal" value="angelfish">
+                    </td>
+                    <td>
+                        <label for="angelfish"><img src="IMG/fish.png" alt="angelfish" width="50" height="50"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="turtle" name="animal" value="turtle">
+                    </td>
+                    <td>
+                        <label for="turtle"><img src="IMG/turtle.png" alt="turtle" width="50" height="50"></label>
+                    </td>            
+                    <td>
+                        <input type="checkbox" id="rockfish" name="animal" value="rockfish">
+                    </td>
+                    <td>
+                        <label for="rockfish"><img src="IMG/fish-2.png" alt="rockfish" width="50" height="50"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="submit" value="SUBMIT">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <br><br>
+    <!-- Drop down menu-->
+    <p align="center">How often do you visit the beach per year?</p>
+    <select name="beach">
+        <option value="0-1">0 - 1</option>
+        <option value="2-4">2 - 4</option>
+        <option value="5-8">5 - 8</option>
+        <option value="8+">8 + </option>
+    </select>
+    <br><br>
+
+    <!-- Signup for email newsletter-->
+    <label for="email">Sign up for The Ocean Newsletter</label>
+    <input type="text" id ="email" name="email">
+    <br>
+    <form action="process.php" method="post">
+            <input type="radio" id="weekly" name="email" value="weekly">
+            <label for="weekly">Weekly Updates</label>
+            <input type="radio" id="monthly" name="email" value="monthly">            
+            <label for="monthly">Monthly Updates</label>
+            <br><br>
+            <input type="submit" value="Sign me up!">
+    </form>
+
+
+    <br><br>
+    <!-- link to oceancleanup.com -->
+    <div class="link">
+    <p>Click <a href="http://www.theoceancleanup.com">HERE</a> for more information on ocean health. </p>
+    </div>
+</td>
+        <td width="400"></td>
+           
+   
+</tbody>
+</table>
+</body>
+
+</html>
